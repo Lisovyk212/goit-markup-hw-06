@@ -31,9 +31,6 @@ p {
   font-weight: 400;
   font-size: 16px;
 }
-p {
-  color: #434455;
-}
 img {
   display: block;
   max-width: 100%;
@@ -247,6 +244,10 @@ address {
 }
 .team-list-item {
   width: calc((100% - 3 * 24px) / 4);
+  background-color: #fff;
+}
+.team-list-img {
+  background-color: url("path_to_image");
 }
 .team-social {
   display: flex;
@@ -540,7 +541,6 @@ address {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  /* padding: 72px 24px 24px 24px; */
 }
 .backdrop.is-open {
   opacity: 1;
@@ -605,12 +605,10 @@ address {
 .modal-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-top: 24px;
   margin-bottom: 16px;
 }
 .modal-label {
@@ -717,6 +715,7 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 8px;
 }
 .modal-check:checked + .modal-label-check .label-check-span {
   background-color: #404bbf;
